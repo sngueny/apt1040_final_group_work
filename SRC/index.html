@@ -6,12 +6,15 @@
     <title>Solar Consult | Your Trusted Partner</title>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Solar Consult</h1>
+        <p>Your Trusted Partner in Solar Energy Solutions</p>
     </header>
 
-    <main>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,14 +22,49 @@
             <li><a href="consult.html">Consult</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Welcome to Solar Consult</h2>
-        <p>Your trusted partner in solar energy solutions. We provide expert advice and consultation to help you harness the power of the sun for a sustainable future.</p>
-    </section>
+
+    <main id="main-content">
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to Solar Consult</h2>
+            <p>Your trusted partner in solar energy solutions. We provide expert advice and consultation to help you harness the power of the sun for a sustainable future.</p>
+        </section>
+
+        <article aria-labelledby="services-heading">
+            <h2 id="services-heading">Our Services</h2>
+            <p>We offer comprehensive solar energy consulting services to help you make informed decisions about renewable energy solutions for your home or business.</p>
+            
+            <section aria-labelledby="solar-benefits-heading">
+                <h3 id="solar-benefits-heading">Benefits of Solar Energy</h3>
+                <ul>
+                    <li>Reduce your carbon footprint</li>
+                    <li>Lower electricity bills</li>
+                    <li>Increase property value</li>
+                    <li>Support renewable energy initiatives</li>
+                </ul>
+            </section>
+
+            <figure>
+                <img src="../Diagrams/wireframe_v1.png" alt="Wireframe diagram showing the initial design layout of our solar consultation website with navigation structure and content sections" width="600" height="400">
+                <figcaption>Initial wireframe design of our solar consultation platform, showcasing our commitment to user-friendly interface design.</figcaption>
+            </figure>
+        </article>
+
+        <aside aria-labelledby="sidebar-heading">
+            <h2 id="sidebar-heading">Quick Facts</h2>
+            <p>Solar energy is one of the fastest-growing renewable energy sources worldwide. Contact us today to learn how solar power can benefit you.</p>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2025 Solar Consult. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consult.html">Consult</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

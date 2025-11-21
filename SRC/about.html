@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Consult | Your Trusted Partner</title>
+    <title>About Us | Solar Consult</title>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Solar Consult</h1>
+        <p>Your Trusted Partner in Solar Energy Solutions</p>
     </header>
 
-    <main>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,14 +22,50 @@
             <li><a href="consult.html">Consult</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>About Solar Consult</h2>
-        <p>Solar Consult is dedicated to providing top-notch solar energy solutions. Our team of experts is committed to helping you transition to sustainable energy with ease and efficiency. Learn more about our mission, values, and the services we offer.</p>
-    </section>
+
+    <main id="main-content">
+        <article aria-labelledby="about-heading">
+            <h2 id="about-heading">About Solar Consult</h2>
+            <p>Solar Consult is dedicated to providing top-notch solar energy solutions. Our team of experts is committed to helping you transition to sustainable energy with ease and efficiency.</p>
+            
+            <section aria-labelledby="mission-heading">
+                <h3 id="mission-heading">Our Mission</h3>
+                <p>To make solar energy accessible and affordable for everyone. We believe that renewable energy is not just an option but a necessity for a sustainable future.</p>
+            </section>
+
+            <section aria-labelledby="values-heading">
+                <h3 id="values-heading">Our Values</h3>
+                <ul>
+                    <li>Environmental responsibility</li>
+                    <li>Customer satisfaction</li>
+                    <li>Expert knowledge</li>
+                    <li>Transparent communication</li>
+                </ul>
+            </section>
+
+            <figure>
+                <img src="../Diagrams/network-diagram.png" alt="Network diagram illustrating the interconnected solar energy systems and consultation workflow" width="600" height="400">
+                <figcaption>Our comprehensive network of solar energy solutions and consultation services connecting clients with renewable energy resources.</figcaption>
+            </figure>
+        </article>
+
+        <aside aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Why Choose Us</h2>
+            <p>With years of experience in the solar energy industry, our team has helped hundreds of clients transition to renewable energy solutions.</p>
+            <p>We pride ourselves on providing personalized consultation services tailored to your specific needs and requirements.</p>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2025 Solar Consult. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consult.html">Consult</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

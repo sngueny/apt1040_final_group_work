@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Consult | Your Trusted Partner</title>
+    <title>Consultation Services | Solar Consult</title>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Solar Consult</h1>
+        <p>Your Trusted Partner in Solar Energy Solutions</p>
     </header>
 
-    <main>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -19,14 +22,64 @@
             <li><a href="consult.html">Consult</a></li>
         </ul>
     </nav>
-    <section>
-        <h2>Consult with Us today</h2>
-        <p>Your trusted partner in solar energy solutions. We provide expert advice and consultation to help you harness the power of the sun for a sustainable future.</p>
-    </section>
+
+    <main id="main-content">
+        <section aria-labelledby="consult-heading">
+            <h2 id="consult-heading">Consult with Us Today</h2>
+            <p>Your trusted partner in solar energy solutions. We provide expert advice and consultation to help you harness the power of the sun for a sustainable future.</p>
+        </section>
+
+        <article aria-labelledby="consultation-process-heading">
+            <h2 id="consultation-process-heading">Our Consultation Process</h2>
+            <p>Our expert team will guide you through every step of your solar energy journey, from initial assessment to system installation and maintenance.</p>
+            
+            <section aria-labelledby="steps-heading">
+                <h3 id="steps-heading">Consultation Steps</h3>
+                <ol>
+                    <li>Initial assessment and site evaluation</li>
+                    <li>Custom system design and proposal</li>
+                    <li>Cost analysis and financing options</li>
+                    <li>Installation planning and scheduling</li>
+                    <li>Post-installation support and monitoring</li>
+                </ol>
+            </section>
+        </article>
+
+        <aside aria-labelledby="faq-heading">
+            <h2 id="faq-heading">Frequently Asked Questions</h2>
+            
+            <details>
+                <summary>What is the typical payback period for solar panels?</summary>
+                <p>The payback period for solar panels typically ranges from 6 to 12 years, depending on factors such as your location, energy usage, and available incentives. Our consultants can provide a personalized analysis for your specific situation.</p>
+            </details>
+
+            <details>
+                <summary>Do I need to live in a sunny area for solar panels to work?</summary>
+                <p>While solar panels are most efficient in sunny areas, they can generate electricity even on cloudy days. Modern solar technology works in various climates, and our team can assess whether solar is viable for your location.</p>
+            </details>
+
+            <details>
+                <summary>What maintenance is required for solar panels?</summary>
+                <p>Solar panels require minimal maintenance. Typically, they need to be cleaned periodically to remove dust and debris, and annual inspections are recommended. Most systems are designed to last 25-30 years with minimal upkeep.</p>
+            </details>
+
+            <details>
+                <summary>Are there government incentives available for solar installation?</summary>
+                <p>Yes, many governments offer tax credits, rebates, and other incentives for solar panel installation. Our consultants stay up-to-date with current programs and can help you identify available incentives in your area.</p>
+            </details>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2025 Solar Consult. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consult.html">Consult</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>

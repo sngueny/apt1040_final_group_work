@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solar Consult | Your Trusted Partner</title>
+    <title>Contact Us | Solar Consult</title>
 </head>
 <body>
+    <!-- Skip Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <header>
         <h1>Solar Consult</h1>
+        <p>Your Trusted Partner in Solar Energy Solutions</p>
     </header>
 
-    <main>
-    <nav>
+    <nav aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -20,25 +23,141 @@
         </ul>
     </nav>
 
-    <section>
-        <h2>Contact Us</h2>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+    <main id="main-content">
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p>Get in touch with our team to learn more about how solar energy can benefit you. Fill out the form below or reach out through our other contact methods.</p>
+        </section>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+        <article aria-labelledby="contact-form-heading">
+            <h2 id="contact-form-heading">Contact Form</h2>
+            
+            <form action="#" method="post" aria-labelledby="contact-form-heading">
+                <fieldset>
+                    <legend>Your Information</legend>
+                    
+                    <p>
+                        <label for="full-name">Full Name: <span aria-label="required">*</span></label>
+                        <input type="text" 
+                               id="full-name" 
+                               name="full-name" 
+                               required 
+                               minlength="2" 
+                               maxlength="100"
+                               aria-required="true"
+                               autocomplete="name"
+                               placeholder="Enter your full name">
+                    </p>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    <p>
+                        <label for="email">Email Address: <span aria-label="required">*</span></label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required 
+                               aria-required="true"
+                               autocomplete="email"
+                               placeholder="your.email@example.com"
+                               pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                    </p>
 
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+                    <p>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" 
+                               id="phone" 
+                               name="phone"
+                               autocomplete="tel"
+                               placeholder="(555) 123-4567"
+                               pattern="[0-9\-\(\)\s]+"
+                               minlength="10"
+                               maxlength="20">
+                        <span>(Optional, but recommended for faster response)</span>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Inquiry Details</legend>
+                    
+                    <p>
+                        <label for="inquiry-type">Type of Inquiry: <span aria-label="required">*</span></label>
+                        <select id="inquiry-type" name="inquiry-type" required aria-required="true">
+                            <option value="">Please select...</option>
+                            <option value="consultation">Free Consultation</option>
+                            <option value="quote">Request Quote</option>
+                            <option value="general">General Question</option>
+                            <option value="support">Existing Customer Support</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message: <span aria-label="required">*</span></label>
+                        <textarea id="message" 
+                                  name="message" 
+                                  rows="6" 
+                                  cols="50" 
+                                  required 
+                                  minlength="10"
+                                  maxlength="1000"
+                                  aria-required="true"
+                                  placeholder="Please provide details about your inquiry (minimum 10 characters)"></textarea>
+                        <span>(Minimum 10 characters)</span>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <p>
+                        <label for="property-type">Property Type:</label>
+                        <select id="property-type" name="property-type">
+                            <option value="">Select property type...</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="property-size">Approximate Property Size (square feet):</label>
+                        <input type="number" 
+                               id="property-size" 
+                               name="property-size"
+                               min="100"
+                               max="100000"
+                               step="100"
+                               placeholder="e.g., 2000">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <input type="submit" value="Submit Contact Form" aria-label="Submit the contact form">
+                    <input type="reset" value="Clear Form" aria-label="Clear all form fields">
+                </p>
+            </form>
+        </article>
+
+        <aside aria-labelledby="contact-info-heading">
+            <h2 id="contact-info-heading">Other Ways to Reach Us</h2>
+            <p>You can also reach us through:</p>
+            <ul>
+                <li>Email: info@solarconsult.com</li>
+                <li>Phone: (555) 123-SOLAR</li>
+                <li>Business Hours: Monday-Friday, 9 AM - 6 PM</li>
+            </ul>
+        </aside>
     </main>
 
     <footer>
         <p>&copy; 2025 Solar Consult. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="consult.html">Consult</a></li>
+            </ul>
+        </nav>
     </footer>
 </body>
 </html>
